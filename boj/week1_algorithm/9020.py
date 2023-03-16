@@ -1,5 +1,5 @@
 # n: 4~10000
-# import sys
+import sys
 # import math
 
 # def eratosthenes(n : int):
