@@ -11,7 +11,8 @@ for _ in range(E):
     a, b, cost = map(int, sys.stdin.readline().strip().split())
     edges.append((cost, a, b))
 
-edges.sort() # 크루스칼 핵심
+# 크루스칼 핵심: edges들이 정렬되어 있어야 함. 여기서 시간복잡도를 줄여야.
+edges.sort()
 
 def find(parents, x):
     if parents[x] != x:
