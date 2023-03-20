@@ -1,9 +1,9 @@
 import sys
 input = sys.stdin.readline
 sys.setrecursionlimit(int(1e9))
-
 N = int(input())
-tr = {} ##dict로 트리 설정
+# dict로 트리 설정
+tr = {}
 for _ in range(N):
     root,left,right = input().rstrip().split()
     tr[root] = [left,right]
